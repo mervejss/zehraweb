@@ -7,8 +7,35 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+    max-width: 100px; /* Adjust the max-width as needed */
+    margin-right: 20px; /* Add some spacing between the logo and the heading */
+    border-radius: 50%; /* Make the logo rounded */
+}
+
+h1 {
+    margin: 0;
+    flex-grow: 1; /* Allow the heading to take up remaining space */
+    text-align: center; /* Center the heading text */
+}
+
+/* Add more styles as needed */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
 
 section.menu {
